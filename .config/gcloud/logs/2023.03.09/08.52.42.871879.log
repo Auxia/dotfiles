@@ -1,5 +1,0 @@
-2023-03-09 08:52:42,872 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
-2023-03-09 08:52:42,873 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
-2023-03-09 08:52:42,875 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application-default', 'print_access_token']
-2023-03-09 08:52:42,876 DEBUG    root            Running [gcloud.auth.application-default.print-access-token] with arguments: [--quiet: "True", --verbosity: "warning"]
-2023-03-09 08:52:42,876 DEBUG    google.auth.transport._http_client Making request: GET http://169.254.169.254
