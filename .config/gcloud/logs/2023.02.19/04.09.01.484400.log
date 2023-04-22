@@ -1,0 +1,7 @@
+2023-02-19 04:09:01,485 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2023-02-19 04:09:01,486 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
+2023-02-19 04:09:01,487 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application-default', 'print_access_token']
+2023-02-19 04:09:01,489 DEBUG    root            Running [gcloud.auth.application-default.print-access-token] with arguments: [--quiet: "True", --verbosity: "warning"]
+2023-02-19 04:09:01,490 DEBUG    google.auth.transport._http_client Making request: GET http://169.254.169.254
+2023-02-19 04:09:04,498 WARNING  google.auth.compute_engine._metadata Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2023-02-19 04:09:04,498 DEBUG    google.auth.transport._http_client Making request: GET http://169.254.169.254
