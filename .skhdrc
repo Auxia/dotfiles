@@ -20,7 +20,6 @@ alt + shift - down : yabai -m window --swap south || $(yabai -m window --display
 alt + shift - up : yabai -m window --swap north || $(yabai -m window --display north; yabai -m display --focus north)
 alt + shift - right : yabai -m window --swap east || $(yabai -m window --display east; yabai -m display --focus east)
 
-
 # set insertion point in focused container
 alt + ctrl - h : yabai -m window --insert west
 alt + ctrl - j : yabai -m window --insert south
@@ -91,3 +90,10 @@ alt - f : yabai -m window --toggle zoom-fullscreen
 
 # toggle window native fullscreen
 alt + shift - f : yabai -m window --toggle native-fullscreen
+
+# app shortcuts
+alt - t : open -a iTerm
+alt - c : open -a Google\ Chrome
+alt - s : open -a Spotify
+alt - v : open -a Code
+

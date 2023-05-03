@@ -164,3 +164,4 @@ local selected_item=$(find . -type f -o -type d 2>/dev/null | fzf --height 40% -
 zle -N fzf-widget
 
 bindkey '^f' fzf-widget
+export PATH=$PATH:/Users/auxia/.spicetify
