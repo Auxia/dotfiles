@@ -43,8 +43,9 @@ alias gtl='git log'
 alias yta="yt-dlp --embed-thumbnail -f 'bestaudio/best' -f 'm4a' --downloader aria2c"
 alias ytd="yt-dlp -f 'bv[height<=1440]+bestaudio/best' --downloader aria2c"
 alias ytdd="yt-dlp -f 'bv[height<=1080]+bestaudio/best' --downloader aria2c" 
-alias mpv="mpv --fs --no-audio-display"
 alias ytp="yt-dlp --cookies ~/Downloads/cookies.txt --downloader aria2c"
+alias mpv="mpv --fs --no-audio-display"
+alias iina="iina --mpv-fs"
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
