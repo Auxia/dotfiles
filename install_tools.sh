@@ -86,6 +86,14 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     cp -r .config/ $HOME/.config/
     cp .zshrc $HOME/.zshrc
 
+    # Install ffmpeg, yt-dlp, iina
+    echo "Installing ffmpeg, yt-dlp, iina"
+    brew install ffmpeg yt-dlp iina
+
+    # Install mpv cask
+    echo "Installing mpv"
+    brew install --cask mpv
+
     echo "Setup complete"
 fi
 
@@ -177,6 +185,10 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     echo "Moving dotfiles"
     cp -r .config/ $HOME/.config/
     cp .zshrc $HOME/.zshrc
+    
+    # Install ffmpeg, yt-dlp, mpv
+    echo "Installing ffmpeg, yt-dlp, mpv"
+    sudo apt install ffmpeg yt-dlp mpv
 
     echo "Setup complete"
 fi
