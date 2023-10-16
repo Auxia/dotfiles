@@ -45,7 +45,9 @@ alias ytd="yt-dlp -f 'bv[height<=1440]+bestaudio/best' --downloader aria2c"
 alias ytdd="yt-dlp -f 'bv[height<=1080]+bestaudio/best' --downloader aria2c" 
 alias ytp="yt-dlp --cookies ~/Downloads/cookies.txt --downloader aria2c"
 alias mpv="mpv --fs --no-audio-display"
-alias iina="iina --mpv-fs"
+alias iinav="iina --mpv-fs"
+alias iinap="iina --pip"
+alias brow='arch --x86_64 /usr/local/Homebrew/bin/brew'
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
@@ -79,15 +81,9 @@ export PATH="$PATH:/Users/auxia/Code/Gill/flutter/bin"
 # The Fuck
 eval $(thefuck --alias)
 
+
 # Z Jump Around
 . /opt/homebrew/etc/profile.d/z.sh
-
-# fzf settings
-# Load fzf keybindings for Zsh
-source "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh"
-
-# Load fzf completion for zsh
-source "$(brew --prefix)/opt/fzf/shell/completion.zsh"
 
 # Custom fzf widget
 function fzf-widget {
@@ -115,3 +111,10 @@ PERL5LIB="/Users/auxia/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LI
 PERL_LOCAL_LIB_ROOT="/Users/auxia/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/Users/auxia/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/auxia/perl5"; export PERL_MM_OPT;
+
+# Homebrew on Apple Silicon
+path=('/opt/homebrew/bin' $path)
+export PATH
+export OPENSSL_ROOT_DIR=/opt/homebrew/opt/openssl@3
+export OPENSSL_ROOT_DIR=/opt/homebrew/opt/openssl@3
+fpath+=${ZDOTDIR:-~}/.zsh_functions
