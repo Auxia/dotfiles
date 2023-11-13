@@ -118,3 +118,11 @@ export PATH
 export OPENSSL_ROOT_DIR=/opt/homebrew/opt/openssl@3
 export OPENSSL_ROOT_DIR=/opt/homebrew/opt/openssl@3
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+function brew() {
+  command brew "$@" 
+
+  if [[ $* =~ "upgrade" ]] || [[ $* =~ "update" ]] || [[ $* =~ "outdated" ]]; then
+    sketchybar --trigger brew_update
+  fi
+}
